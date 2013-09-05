@@ -1,0 +1,4 @@
+var audiogame = {};
+$(function(){
+
+});

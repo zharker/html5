@@ -3,20 +3,30 @@
 <head>
 <meta charset="utf-8">
 <title>Drawing Circles in Canvas</title>
+<link href='http://fonts.googleapis.com/css?family=Rock+Salt'rel='stylesheet'type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'/>
 <link rel="stylesheet" href="css/dc.css" />
 </head>
 <body>
 <header>
 <h1>Drawing in Canvas</h1>
 </header>
-<canvas id="game" width="768" height="400">
+<section id="page">
+<canvas id="game" width="768" height="400" style="display:none">
 Sorry, your web browser does not support Canvas content.
 </canvas>
-<p>Puzzle <span id="level">0</span>, Completeness:
+<p style="display:none">Puzzle <span id="level">0</span>, Completeness:
 <span id="progress">0</span>%</p>
-<canvas id="game2" width="768" height="400">
+
+<section id="layers">
+	<canvas id="bg" width="768" height="400">
 Sorry, your web browser does not support Canvas content.
-</canvas>
+	</canvas>
+	<canvas id="guide" width="768" height="400"></canvas>
+	<canvas id="game2" width="768" height="400"></canvas>
+	<canvas id="ui" width="768" height="400"></canvas>
+</section>
+</section>
 <script src="js/jq1_10.js"></script>
 <script src="js/dc.js"></script>
 </body>
